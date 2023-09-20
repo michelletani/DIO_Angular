@@ -6,17 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal de Notícias</title>
     <link rel="stylesheet" href="style/card.css">
+    <script src="src/components/CardNews.js" defer></script>
+    <script src="src/components/TituloDinamico.js" defer></script>
 </head>
 <body>
-    <div class="card">
-        <div class="card_left">
-            <span>By Michelle Tani</span>
-            <a href="#">Darth Vader Contrata Devs</a>
-            <p>Darth Vader procura desenvolvedores que sabem trabalhar com componentes.</p>
+    <div class="container">
+       <!--
+        <div class="card">
+            <div class="card_left">
+                <span>By Michelle Tani</span>
+                <a href="#">Darth Vader Contrata Devs</a>
+                <p>Darth Vader procura desenvolvedores que sabem trabalhar com componentes.</p>
+            </div>
+            <div class="card_right">
+                <img src="assets/Star_Wars_-_Darth_Vader.jpg" alt="">
+            </div>
         </div>
-        <div class="card_right">
-            <img src="assets/Star_Wars_-_Darth_Vader.jpg" alt="">
-        </div>
+        -->
+
+        <card-news 
+        autor="Felipe"
+        title="Darth Vader Contrata"
+        link-url=""
+        content="Darth Vader procura desenvolvedores que sabem trabalhar com componentes."
+        photo="assets/Star_Wars_-_Darth_Vader.jpg"
+        >
+        </card-news>
+
+        <card-news 
+        autor="Michelle"
+        title="Gatos"
+        link-url="https://www.linkedin.com/in/michelle-tani/"
+        content="Os gatos irão dominar o mundo."
+        photo=""
+        >
+        </card-news>
+
+        <card-news 
+        autor=""
+        title="Gatos"
+        link-url="https://github.com/michelletani"
+        content="Gatos anônimos."
+        photo=""
+        >
+        </card-news>
     </div>
 </body>
 </html>
